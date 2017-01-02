@@ -131,7 +131,7 @@ public class DirectoryLearning {
 		return trees;
 	}
 
-	public static void main(String[] args) {
+	public static void main1(String[] args) {
 		if (args.length != 2) {
 			System.out.println("Usage : java " + DirectoryLearning.class.getCanonicalName() + " <sourcedir> <destdir>");
 			System.exit(-1);

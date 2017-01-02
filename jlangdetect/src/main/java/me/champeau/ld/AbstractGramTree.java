@@ -65,15 +65,15 @@ private final static Logger theLogger = LoggerFactory.getLogger(AbstractGramTree
         double tot = 0;
         for (CharSequence charSequence : tokenizer) {
             double s = scoreGram(charSequence);
-            if (theLogger.isDebugEnabled()) {
-                theLogger.debug(charSequence + " scores " + s);
-            }
+            // if (theLogger.isDebugEnabled()) {
+            //     theLogger.debug(charSequence + " scores " + s);
+            // }
             tot += s;
         }
         double score = tot / Math.log(gramcount);
-        if (theLogger.isDebugEnabled()) {
-            theLogger.debug(text + ", total " + tot + "/" + Math.log(gramcount) + "=" + score);
-        }
+        // if (theLogger.isDebugEnabled()) {
+        //     theLogger.debug(text + ", total " + tot + "/" + Math.log(gramcount) + "=" + score);
+        // }
         return score;
     }
 
